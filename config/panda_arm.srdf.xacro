@@ -6,4 +6,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
   <xacro:include filename="$(find rv_panda_moveit_config)/config/panda_arm.xacro" />
   <xacro:panda_arm />
+
+  <disable_collisions link1="panda_link3" link2="panda_link8" reason="Never" />
+  <disable_collisions link1="panda_link4" link2="panda_link8" reason="Never" />
+  <disable_collisions link1="panda_link6" link2="panda_link8" reason="Never" />
+  <disable_collisions link1="panda_link7" link2="panda_link8" reason="Never" />
 </robot>
